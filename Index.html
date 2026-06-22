@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css"/>
+    <link rel="icon" href="Imagenes/Calculadora.png" type="image/png">
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="containerCalculator">
+        <div id="resultContainer">
+            <div id="preResult" class="noUserSelect"></div>
+            <div id="result">0</div>
+        </div>
+
+        <div id="upperOptions">
+            <button class="upperButton operation noUserSelect" value="divide">/</button>
+            <button class="upperButton operation noUserSelect" value="times">x</button>
+            <button id="clearButton" class="upperButton noUserSelect">C</button>
+            <button id="deleteButton" class="upperButton noUserSelect">DEL</button>
+        </div>
+
+        <div id="mainOptions">
+            <div id="numbers">
+                <div id="firstRow" class="rows">
+                    <button class="number numberButton noUserSelect" value="7">7</button>
+                    <button class="number numberButton noUserSelect" value="8">8</button>
+                    <button class="number numberButton noUserSelect" value="9">9</button>
+                </div>
+
+                <div id="secondRow" class="rows">
+                    <button class="number numberButton noUserSelect" value="4">4</button>
+                    <button class="number numberButton noUserSelect" value="5">5</button>
+                    <button class="number numberButton noUserSelect" value="6">6</button>
+                </div>
+
+                <div id="thirdRow" class="rows">
+                    <button class="number numberButton noUserSelect" value="1">1</button>
+                    <button class="number numberButton noUserSelect" value="2">2</button>
+                    <button class="number numberButton noUserSelect" value="3">3</button>
+                </div>
+
+                <div id="fourthRow" class="rows">
+                    <button class="number numberButton noUserSelect" value="0">0</button>
+                    <button class="number numberButton noUserSelect" value=".">.</button>
+                    <button id="resultButton" class="number noUserSelect">=</button>
+                </div>
+            </div>
+
+            <div id="rightOptions">
+                <button class="sideButton operation noUserSelect" value="plus">+</button>
+                <button class="sideButton operation noUserSelect" value="minus">-</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-4.0.0.slim.js" integrity="sha256-M+GjhMBfXikM1izMplICCTscIj5hzPCp6uDzaypxtgg=" crossorigin="anonymous"></script>
+    <script src="Script.js"></script>
+</body>
+</html>
