@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -22,6 +23,10 @@ button {
     font-weight: bold;
     text-align: center;
     cursor: pointer;
+}
+
+button:focus {
+    outline: 2px solid rgb(2, 114, 219);
 }
 
 .noUserSelect {
@@ -53,7 +58,7 @@ button {
 }
 
 #preResult {
-    font-size: 0.8cm;
+    font-size: 0.6cm;
     color: gray;
 }
 
